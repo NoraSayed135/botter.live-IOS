@@ -17,8 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for custoamization after application launch.
-        
-        
 
         Botter.show(APIKey: "your API key")
                BotterSettingsManager.AccentColor = UIColor.init(codeString: "#72962C")
