@@ -28,7 +28,7 @@ pod Botter
 
 ## Integration
 
-<p>First, you need <strong>import Botter</strong> in your App delegate.then, you'll need to get your Botter Android API key.
+<p>First, you need <strong>import Botter</strong> in your App delegate.then, you'll need to get your Botter iOS API key.
   To find this, just contact our support team to get you one. Then, initialize Botter by calling the following in the <strong>didFinishLaunchingWithOptions</strong> method of your AppDelegate class</p>
   
 ```
