@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-testSdK/Pods-testSdK-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Botter/Botter.framework
+${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework

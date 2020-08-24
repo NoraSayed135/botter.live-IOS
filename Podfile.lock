@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (5.2.1)
+  - Botter (1.0.10.1):
+    - Alamofire
+    - IQKeyboardManagerSwift
+  - IQKeyboardManagerSwift (6.5.5)
+
+DEPENDENCIES:
+  - Botter (from `https://github.com/NoraSayed135/Botter.git`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+
+EXTERNAL SOURCES:
+  Botter:
+    :git: https://github.com/NoraSayed135/Botter.git
+
+CHECKOUT OPTIONS:
+  Botter:
+    :commit: 9e33e0eca9c1a7270a4d68e41530e949e27733ad
+    :git: https://github.com/NoraSayed135/Botter.git
+
+SPEC CHECKSUMS:
+  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Botter: 406b697e709ebec24c40bf3258b3d4a465d3b08f
+  IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+
+PODFILE CHECKSUM: b17064e8428960e00d0d8f9c039fc766a283da12
+
+COCOAPODS: 1.9.0.beta.2
