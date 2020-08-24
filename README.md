@@ -105,8 +105,8 @@ BotterSettingsManager.language  = .english
 | BotterSettingsManager.WelcomeMessage | Used to set the welcome screen header subtitle text. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/3.jpg" alt="3">|
 |BotterSettingsManager.ChatTitleText , BotterSettingsManager.ChatTitleColor | Used to set the main chat header title text and color | <img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/6.jpg" alt="6">|
 | BotterSettingsManager.BotterMessageBGColor , BotterSettingsManager.BotterMessageFontColor | Used to set the botter message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/7.jpg" alt="7">
-| setBotterRegularFontFamily | Used to set the primary font all over the chat. |
-| setBotterSemiBoldFontFamily | Used to set the secondary font all over the chat. |
+| BotterSettingsManager.Font.regularFontName | Used to set the primary font all over the chat. |
+| BotterSettingsManager.Font.boldFontName | Used to set the secondary font all over the chat. |
 
 
 
