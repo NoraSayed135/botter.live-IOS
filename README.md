@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/ic_botter.png" alt="Botter">
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/ic_botter.png" alt="Botter">
 
 ## Onboard, retain and support mobile users at scale
 Engage customers with in‑app messages and support them with an integrated knowledge base and help desk.
@@ -10,10 +10,10 @@ You can open Botter from a persistent button that sits over your app’s UI, Fro
 
 ## Sceenshots
 <p float="left">
-<img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/sample_black.jpg" width="200" alt="sample1">
-<img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/sample_blue.jpg" width="200" alt="sample2">
-<img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/sample_orange.jpg" width="200" alt="sample3">
-<img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/sample_green.jpg" width="200" alt="sample4">
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/sample_black.png" width="200" alt="sample1">
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/sample_blue.png" width="200" alt="sample2">
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/sample_orange.png" width="200" alt="sample3">
+<img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/sample_green.png" width="200" alt="sample4">
 </p>
 
 
@@ -146,14 +146,14 @@ new BotterCustomization.Builder()
 | ------------- | ------------- | ------------- |
 | setLauncherGravity | To set the launcher to the right/left of the screen. | 
 | setDefaultLocal | To set the default bot language either AR/EN. | 
-| setLauncherIcon | To change the launcher icon. | <img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/1.jpg" alt="1">|
-| setBotterLogo | To set the chat main logo. | <img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/2.jpg" alt="2">|
-| setBotterAccentColor | This is the main color used all over the chat like launcher bg color, welcome screen top area bg color, chat header, ect… I.e. in the image accent color is purple. | <img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/main_color.jpg" alt="main_color">|
-| setBotterHeadlineText , setBotterHeadlineTextColor | Used to set the welcome screen header title text and color. | <img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/4.jpg" alt="4">|
-| seBotterWelcomeText , setBotterWelcomeTextColor | Used to set the welcome screen header subtitle text and color. | <img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/3.jpg" alt="3">|
-|setBotterChatHeaderTitle , setBotterChatHeaderTitleColor | Used to set the main chat header title text and color | <img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/6.jpg" alt="6">|
-| setBotterChatBubbleColor , setBotterChatBubbleTextColor | Used to set the botter message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/7.jpg" alt="7">|
-| setSenderChatBubbleColor , setSenderChatBubbleTextColor | Used to set the sender/user message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/karimabdelhameed/Botter/master/.github/images/8.jpg" alt="8">|
+| setLauncherIcon | To change the launcher icon. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/1.jpg" alt="1">|
+| setBotterLogo | To set the chat main logo. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/2.jpg" alt="2">|
+| setBotterAccentColor | This is the main color used all over the chat like launcher bg color, welcome screen top area bg color, chat header, ect… I.e. in the image accent color is purple. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/main_color.jpg" alt="main_color">|
+| setBotterHeadlineText , setBotterHeadlineTextColor | Used to set the welcome screen header title text and color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/4.jpg" alt="4">|
+| seBotterWelcomeText , setBotterWelcomeTextColor | Used to set the welcome screen header subtitle text and color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/3.jpg" alt="3">|
+|setBotterChatHeaderTitle , setBotterChatHeaderTitleColor | Used to set the main chat header title text and color | <img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/6.jpg" alt="6">|
+| setBotterChatBubbleColor , setBotterChatBubbleTextColor | Used to set the botter message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/7.jpg" alt="7">|
+| setSenderChatBubbleColor , setSenderChatBubbleTextColor | Used to set the sender/user message bubble bg color and it’s text color. | <img src="https://raw.githubusercontent.com/botter-live/botter.live-IOS/master/.github/images/8.jpg" alt="8">|
 | setBotterRegularFontFamily | Used to set the primary font all over the chat. |
 | setBotterSemiBoldFontFamily | Used to set the secondary font all over the chat. |
 
