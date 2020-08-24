@@ -18,66 +18,25 @@ You can open Botter from a persistent button that sits over your app’s UI, Fro
 
 
 ## Installation
-Install Botter to see and talk to users of your Android app, Botter for Android supports API 23 and above.
+Install Botter to see and talk to users of your IOS app, Botter for IOS supports from target 11 and above.
 
-<li>Add the below lines under <strong>all projects -> repositories</strong> in build.gradle <strong>(project level)</strong>.</li>
+<li>Add the below line in <strong>podfile</strong></li>
 
 ```
-maven {
-  url "from our support team"
-     credentials {
-       username = "*ask for your username*" //from our support team
-       password = "*ask for your password*" //from our support team
-    }
-}
-```
-<li> Make sure that you suppoty java 8 by adding the below lines under <strong>android { </strong> in build.gradle <strong>(App level)</strong>
-  
-```
- compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    } 
-```
-<li> add Botter dependency under <strong>dependencies { </strong> section  
- 
-```
-implementation "com.bluecrunch:botter:1.3.5"
+pod Botter
 ```
 
 ## Integration
 
-<p>First, you'll need to get your Botter Android API key. To find this, just contact our support team to get you one.
-  Then, initialize Botter by calling the following in the <strong>onCreate()</strong> method of your application class</p>
+<p>First, you need <strong>import Botter</strong> in your App delegate.then, you'll need to get your Botter Android API key.
+  To find this, just contact our support team to get you one. Then, initialize Botter by calling the following in the <strong>didFinishLaunchingWithOptions</strong> method of your AppDelegate class</p>
   
 ```
-Botter.initialize(this,"Your API Key",
-new BotterCustomization.Builder().build());
-```
-
-<strong>Note:</strong> If you don't currently implement a custom application, you’ll need to create one. A custom application looks like this:
-
-```
-public class CustomApplication extends Application {
-    @Override public void onCreate() {
-        super.onCreate();
-        Botter.initialize(this,"Your API Key",
-new BotterCustomization.Builder().build());
-   }
-}
-```
-
-You’ll need to update your manifest to use your application:
-
-```
-<application
-    android:name=".CustomApplication">
-</application>
+Botter.show(APIKey: "your API key")
 ```
 
 ## Supported integration languages
-<li> Java. </li>
-<li> Kotlin. </li>
+<li> Swift. </li>
 
 ## Current supported bot languages
 <li> English </li>
@@ -89,56 +48,48 @@ You’ll need to update your manifest to use your application:
 👋 Contact us with any integration/issues at [Botter - Contact us page](https://botter.ai/contact/). If you bump into any problems or need more support, just start a conversation with our support team.
 
 ## Customizations
-if you want anytime at any screen hide the Botter chat icon, just write the below line inside <strong>onResume()</strong> method : 
+if you want anytime at any screen hide the Botter chat icon, just write the below line inside <strong>viewWillAppear</strong> method : 
 
 ```
-Botter.client().setLauncherVisibility(Botter.Visibility.GONE);
+Botter.hideLauncherButton()
 ```
 
-and you can show it anytime using the below line at <strong>onResume()</strong> also :
+and you can show it anytime using the below line at <strong>viewWillAppear</strong> also :
 
 ```
-Botter.client().setLauncherVisibility(Botter.Visibility.VISIBLE);
+Botter.showLauncherButton()
 ```
 
-You can also change margins around the launcher button using : 
+You can also change bottom margin of the launcher button using : 
 
 ```
-Botter.client().setLauncherMargin(left,top,right,bottom);
+BotterSettingsManager.bottomMargin  = 40
 ```
 
 If you have your custom button , and want to show chat screen directly then you can use the below line:
 
 ```
-Botter.client().openChatActivity();
+Botter.openChatScreen(APIKey: "Your Api key")
 ```
 
-You can customize Botter with your preferred settings, when you initialize Botter instance inside <strong>onCreate</strong> method of your Application class like below : 
+You can customize Botter with your preferred settings, when you initialize Botter instance inside <strong>didFinishLaunchingWithOptions</strong> method of your AppDelegate class like below : 
 
 ```
-Botter.initialize(this,
-"Your API Key"
-new BotterCustomization.Builder() 
-.setLauncherGravity(BotterCustomization.LauncherGravity.LEFT) // set the launcher icon to the left/right of your screen. (default right).
-.setDefaultLocal(BotterCustomization.Local.AR) // set default bot language either AR/EN. (default EN).
-.setLauncherIcon(R.drawable.) //set the launcher icon.
-.setBotterLogo(R.drawable.) //set the chat logo.
-.setBotterAccentColor(R.color.) //set the chat accent color.
-.setBotterHeadlineText("") // set welcome screen headline text.
-.setBotterHeadlineTextColor(R.color.) // set welcome screen headline text color.
-.seBtotterWelcomeText("") // set welcome screen headline welcome message.
-.setBotterWelcomeTextColor(R.color.) // set welcome screen headline welcome message color.
-.setBotterChatHeaderTitle("") //set chat screen header title.              
-.setBotterChatHeaderTitleColor(R.color.) // set chat screen header title color.
-.setBotterChatBubbleColor(R.color.) // set botter bubble color.
-.setBotterChatBubbleTextColor(R.color.) // set botter bubble text color.
-.setSenderChatBubbleColor(R.color.) // set sender bubble color.
-.setSenderChatBubbleTextColor(R.color.) // set sender bubble text color.
-.setBotterRegularFontFamily(R.font.) // set chat primary font.
-.setBotterSemiBoldFontFamily(R.font.) // set chat secondry font.
-.setHasFAQs(true) // Determine if chat has FAQs or not.
-.setAgentDefaultIcon(R.drawable.) // set the default icon for agent.
-.build());
+BotterSettingsManager.AccentColor = UIColor.init(codeString: "#72962C")
+BotterSettingsManager.FontColor = UIColor.white
+BotterSettingsManager.BotterMessageFontColor = UIColor.black
+BotterSettingsManager.BotterMessageBGColor  = UIColor.init(codeString: "")
+BotterSettingsManager.ChatTitleColor = UIColor.white
+BotterSettingsManager.ChatTitleText  = "Botter"
+BotterSettingsManager.HeadlineMessage  = "Chat with BOTTER"
+BotterSettingsManager.WelcomeMessage  = "We’re here to answer your questions.\nAsk us anything!"
+BotterSettingsManager.alignLauncherLeft = false
+BotterSettingsManager.bottomMargin  = 40
+BotterSettingsManager.Font.regularFontName = "Roboto-Regular"
+BotterSettingsManager.Font.mediumFontName = "Roboto-Medium"
+BotterSettingsManager.Font.boldFontName = "Roboto-Bold"
+BotterSettingsManager.hasFAQs = false
+BotterSettingsManager.language  = .english
 ```
 
 ## Customization parameters table:
